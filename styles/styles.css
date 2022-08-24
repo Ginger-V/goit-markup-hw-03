@@ -105,12 +105,9 @@ border-bottom: 1px solid #ECECEC;
 }
 
 .page-header-container {
-max-width: 1200px;
 display: flex;
 align-items: center;
 justify-content: space-between;
-margin-top: 32px;
-margin-bottom: 32px;
 }
 
 .header-nav {
@@ -230,7 +227,6 @@ color: #2196F3;
 /* наші особливості */
 .section {
 background-color: #ffffff;
-padding-top: 94px;
 padding-bottom: 94px;
 }
 
@@ -290,8 +286,6 @@ border-radius: 0px 0px 4px 4px;
 }
 
 
-
-
 .paragraph {
 font-style: normal;
 font-weight: 400;
@@ -349,9 +343,10 @@ color: #212121;
 background-color: #F5F4FA;
 border-radius: 4px;
 border: 1px solid transparent;
+padding: 6px 25px;
 }
 
-.headup_hover:active,
+.headup_hover:hover,
 .headup_hover:focus {
 cursor: pointer;
 background-color: #2196F3;
@@ -439,8 +434,8 @@ color: #757575;
 .page-footer {
 width: 100%;
 background-color: #2F303A;
-padding-top: 0;
-padding-bottom: 0;
+padding-top: 60px;
+padding-bottom: 60px;
 }
 
 .page-footer-container {
@@ -449,6 +444,11 @@ display: flex;
 flex-direction: column;
 }
 
+.webstudio {
+padding-top: 0;
+padding-bottom: 0;
+margin-bottom: 20px;
+}
 
 .logo-web-footer {
 font-family: 'Raleway';
@@ -475,6 +475,17 @@ margin-bottom: 20px;
 /*footer*/
 /*розмір для адресси студії*/
 
+.contact-panel {
+font-style: normal;
+margin-top: 20px;
+margin-bottom: 60px;
+}
+
+
+.contact-panel li:last-child{
+margin-bottom: 0;
+}
+
 
 .contact-nav {
 text-decoration: none;
@@ -484,14 +495,41 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: #ffffff;
+margin-bottom: 9px;
 }
 
-.contact-panel:not(last-child) {
-font-style: normal;
-font-weight: 400;
+.contact-mail-footer {
+text-decoration: none;
+list-style: none;
+font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
-letter-spacing: 0.03em;
-align-items: center;
-padding-bottom: 60px;
+letter-spacing: 0.02em;
+color: #757575;
+margin-top: 9px;
+padding: 0;
 }
+
+
+.contact-number-footer {
+text-decoration: none;
+list-style: none;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #757575;
+margin-top: 9px;
+padding: 0;
+}
+
+.contact-mail-footer:hover,
+.contact-mail-footer:focus {
+color: var(--accent-color--);
+}
+
+.contact-number-footer:hover,
+.contact-number-footer:focus {
+color: var(--accent-color--);
+}
+
