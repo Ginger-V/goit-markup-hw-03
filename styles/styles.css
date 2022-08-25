@@ -227,9 +227,17 @@ color: #2196F3;
 /* наші особливості */
 .section {
 background-color: #ffffff;
+padding-top: 94px;
 padding-bottom: 94px;
 }
 
+.characteristics {
+padding-bottom: 0;
+}
+
+.pictures {
+padding-bottom: 0;
+}
 
 .container {
 max-width: 1200px;
@@ -445,8 +453,6 @@ flex-direction: column;
 }
 
 .webstudio {
-padding-top: 0;
-padding-bottom: 0;
 margin-bottom: 20px;
 }
 
@@ -475,10 +481,9 @@ margin-bottom: 20px;
 /*footer*/
 /*розмір для адресси студії*/
 
-.contact-panel {
+.contact-panel li{
 font-style: normal;
-margin-top: 20px;
-margin-bottom: 60px;
+margin-bottom: 9px;
 }
 
 
@@ -496,6 +501,10 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: #ffffff;
 margin-bottom: 9px;
+}
+
+.contact-nav:hover {
+color: var(--accent-color--);
 }
 
 .contact-mail-footer {
